@@ -46,10 +46,15 @@ The program shows the total attempts when you win
 EXAMPLE :
 
 Enter your guess: 50
+
 Too low! Try again.
+
 Enter your guess: 75
+
 Too high! Try again.
+
 Enter your guess: 63
+
 Congratulations! You guessed the number 63 in 3 attempts.
 
 
