@@ -4,7 +4,7 @@ Hello!
 This repository contains a few beginner-friendly Python projects to practice coding in Python. Each project focuses on basic concepts like loops, functions, conditional statements, user input, and list management.
 
 
-1.BASIC CALCULATOR 
+   1.BASIC CALCULATOR 
 
 A simple calculator that can add, subtract, multiply, and divide numbers.
 
