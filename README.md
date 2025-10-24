@@ -4,18 +4,6 @@ Hello!
 This repository contains a few beginner-friendly Python projects to practice coding in Python. Each project focuses on basic concepts like loops, functions, conditional statements, user input, and list management.
 
 
-Folder Structure :
-
-python-projects/
-│
-├── basiccalculator.py        # Simple calculator (add, subtract, multiply, divide)
-├── numberguessinggame.py    # Guess the random number game
-├── temperatureconverter.py   # Convert Celsius, Fahrenheit, and Kelvin
-├── todolist.py               # Command-line to-do list app
-└── README.md                  # This file
-
-
-
 1.BASIC CALCULATOR 
 
 A simple calculator that can add, subtract, multiply, and divide numbers.
