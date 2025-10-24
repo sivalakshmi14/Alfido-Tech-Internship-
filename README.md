@@ -22,8 +22,11 @@ Get the result instantly!
 EXAMPLE :
 
 Enter choice (1/2/3/4): 1
+
 Enter first number: 5
+
 Enter second number: 3
+
 5 + 3 = 8
 
 
@@ -68,7 +71,9 @@ See the converted result
 EXAMPLE :
 
 Enter your choice (1-6): 1
+
 Enter the temperature to convert: 25
+
 25°C = 77.00°F
 
 
@@ -93,7 +98,9 @@ EXAMPLE :
 4. Exit
 
 Enter your choice (1-4): 1 
+
 Enter the task to add: Buy groceries 
+
 Task 'Buy groceries' added successfully!
 
 
