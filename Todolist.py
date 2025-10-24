@@ -1,51 +1,47 @@
-# Task 4: Simple To-Do List
+# Simple To-Do List App
 
-tasks = []  # Empty list to store tasks
+todo_list = []
 
-def show_menu():
-    print("\n=== Simple To-Do List ===")
-    print("1. Add a Task")
-    print("2. View Tasks")
-    print("3. Remove a Task")
+def add_task(task):
+    todo_list.append(task)
+    print(f"Task '{task}' added successfully!")
+
+def remove_task(task_number):
+    if 0 < task_number <= len(todo_list):
+        removed_task = todo_list.pop(task_number - 1)
+        print(f"Task '{removed_task}' removed successfully!")
+    else:
+        print("Invalid task number!")
+
+def view_tasks():
+    if not todo_list:
+        print("Your to-do list is empty!")
+    else:
+        print("Your To-Do List:")
+        for i, task in enumerate(todo_list, start=1):
+            print(f"{i}. {task}")
+
+# Main program loop
+while True:
+    print("\n--- To-Do List Menu ---")
+    print("1. Add Task")
+    print("2. Remove Task")
+    print("3. View Tasks")
     print("4. Exit")
 
-while True:
-    show_menu()
     choice = input("Enter your choice (1-4): ")
 
     if choice == '1':
-        task = input("Enter task to add: ")
-        tasks.append(task)
-        print(f"✅ '{task}' added to the list.")
-
+        task = input("Enter the task to add: ")
+        add_task(task)
     elif choice == '2':
-        print("\n📝 Your Tasks:")
-        if not tasks:
-            print("No tasks added yet.")
-        else:
-            for i, t in enumerate(tasks, 1):
-                print(f"{i}. {t}")
-
+        view_tasks()
+        task_number = int(input("Enter the task number to remove: "))
+        remove_task(task_number)
     elif choice == '3':
-        print("\n🗑️ Remove Task:")
-        if not tasks:
-            print("No tasks to remove.")
-        else:
-            for i, t in enumerate(tasks, 1):
-                print(f"{i}. {t}")
-            try:
-                num = int(input("Enter task number to remove: "))
-                if 1 <= num <= len(tasks):
-                    removed = tasks.pop(num - 1)
-                    print(f"❌ '{removed}' removed from the list.")
-                else:
-                    print("Invalid task number.")
-            except ValueError:
-                print("Please enter a valid number.")
-
+        view_tasks()
     elif choice == '4':
-        print("👋 Exiting To-Do List. Have a productive day!")
+        print("Exiting To-Do List App. Goodbye!")
         break
-
     else:
-        print("Invalid choice. Please enter a number between 1 and 4.")
+        print("Invalid choice! Please enter a number between 1 and 4.")
