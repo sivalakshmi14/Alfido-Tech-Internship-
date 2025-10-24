@@ -92,10 +92,12 @@ EXAMPLE :
 3. View Tasks
 4. Exit
 
-Enter your choice (1-4): 1
-Enter the task to add: Buy groceries
+Enter your choice (1-4): 1 
+Enter the task to add: Buy groceries 
 Task 'Buy groceries' added successfully!
 
 
+
 OVERVIEW :
+
 These projects helped me practice and understand Python basics. I learned how to work with loops, functions, conditional statements, and lists. They also gave me experience handling user input and solving small problems step by step. Completing them boosted my confidence in programming and showed me how to apply Python concepts in simple real world tasks. 
